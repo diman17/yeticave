@@ -28,6 +28,7 @@
                             <span class="lot__cost"><?= format_price($value['price']) ?><b class="rub">р</b></span>
                         </div>
                         <div class="lot__timer timer">
+                            <?= $time_to_end ?>
                         </div>
                     </div>
                 </div>

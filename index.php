@@ -6,6 +6,7 @@ require_once('./data.php');
 $page_content = render_template('./templates/index.php', [
     'categories' => $categories,
     'products' => $products,
+    'time_to_end' => get_time_to_end(),
 ]);
 
 $layout_content = render_template('./templates/layout.php', [

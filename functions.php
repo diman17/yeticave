@@ -22,3 +22,12 @@ function format_price($price)
 
     return number_format($result, 0, '.', ' ');
 }
+
+function get_time_to_end()
+{
+    date_default_timezone_set('Europe/Minsk');
+    $ts_to_end = strtotime('tomorrow') - strtotime('now');
+    $hours_to_end = floor($ts_to_end / 3600);
+    $minutes_to_end = floor(($ts_to_end - ($hours_to_end * 3600)) / 60);
+    return $hours_to_end . ':' . $minutes_to_end;
+}
