@@ -9,14 +9,14 @@
 </nav>
 <section class="lot-item container">
     <?php if (isset($product)) : ?>
-        <h2><?= $product['name'] ?></h2>
+        <h2><?= $product['lot-name'] ?></h2>
         <div class="lot-item__content">
             <div class="lot-item__left">
                 <div class="lot-item__image">
-                    <img src=<?= $product['image'] ?> width="730" height="548" alt=<?= $product['name'] ?>>
+                    <img src=<?= $product['image-path'] ?> width="730" height="548" alt=<?= $product['lot-name'] ?>>
                 </div>
                 <p class="lot-item__category">Категория: <span><?= $product['category'] ?></span></p>
-                <p class="lot-item__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores consectetur cum delectus saepe sed ad culpa nostrum? Obcaecati nemo dignissimos sed placeat labore temporibus, ratione corporis possimus alias beatae nisi tempore accusantium quibusdam facilis repellendus earum provident velit architecto dolor dicta nobis! Nobis natus similique autem magni voluptatum at modi obcaecati est corporis quibusdam molestiae dolorem, ullam, magnam ad cum ratione? Commodi minima, voluptatibus rem ducimus odit expedita perspiciatis enim!</p>
+                <p class="lot-item__description"><?= $product['message'] ?></p>
             </div>
             <div class="lot-item__right">
                 <div class="lot-item__state">
@@ -26,10 +26,10 @@
                     <div class="lot-item__cost-state">
                         <div class="lot-item__rate">
                             <span class="lot-item__amount">Текущая цена</span>
-                            <span class="lot-item__cost"><?= $product['price'] ?></span>
+                            <span class="lot-item__cost"><?= format_price($product['lot-rate']) ?></span>
                         </div>
                         <div class="lot-item__min-cost">
-                            Мин. ставка <span>12 000 р</span>
+                            Мин. ставка <span><?= format_price($product['lot-step']) ?> р</span>
                         </div>
                     </div>
                     <form class="lot-item__form" action="https://echo.htmlacademy.ru" method="post">

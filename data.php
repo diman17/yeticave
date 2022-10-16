@@ -17,39 +17,57 @@ $categories = ['Доски и лыжи', 'Крепления', 'Ботинки',
 
 $products = [
     [
-        'name' => '2014 Rossignol District Snowboard',
+        'lot-name' => '2014 Rossignol District Snowboard',
         'category' => 'Доски и лыжи',
-        'price' => 10999,
-        'image' => 'img/lot-1.jpg'
+        'message' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis fuga sunt dolore ratione molestias. Ea dolores odit incidunt fugiat iusto.',
+        'lot-rate' => 10999,
+        'lot-step' => 100,
+        'lot-date' > '20.10.2022',
+        'image-path' => 'img/lot-1.jpg'
     ],
     [
-        'name' => 'DC Ply Mens 2016/2017 Snowboard',
+        'lot-name' => 'DC Ply Mens 2016/2017 Snowboard',
         'category' => 'Доски и лыжи',
-        'price' => 159999,
-        'image' => 'img/lot-2.jpg'
+        'message' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis fuga sunt dolore ratione molestias. Ea dolores odit incidunt fugiat iusto.',
+        'lot-rate' => 159999,
+        'lot-step' => 100,
+        'lot-date' > '20.10.2022',
+        'image-path' => 'img/lot-2.jpg'
     ],
     [
-        'name' => 'Крепления Union Contact Pro 2015 года размер L/XL',
+        'lot-name' => 'Крепления Union Contact Pro 2015 года размер L/XL',
         'category' => 'Крепления',
-        'price' => 8000,
-        'image' => 'img/lot-3.jpg'
+        'message' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis fuga sunt dolore ratione molestias. Ea dolores odit incidunt fugiat iusto.',
+        'lot-rate' => 8000,
+        'lot-step' => 100,
+        'lot-date' > '20.10.2022',
+        'image-path' => 'img/lot-3.jpg'
     ],
     [
-        'name' => 'Ботинки для сноуборда DC Mutiny Charocal',
+        'lot-name' => 'Ботинки для сноуборда DC Mutiny Charocal',
         'category' => 'Ботинки',
-        'price' => 10999,
-        'image' => 'img/lot-4.jpg'
+        'message' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis fuga sunt dolore ratione molestias. Ea dolores odit incidunt fugiat iusto.',
+        'lot-rate' => 10999,
+        'lot-step' => 100,
+        'lot-date' > '20.10.2022',
+        'image-path' => 'img/lot-4.jpg'
     ],
     [
-        'name' => 'Куртка для сноуборда DC Mutiny Charocal',
+        'lot-name' => 'Куртка для сноуборда DC Mutiny Charocal',
         'category' => 'Одежда',
-        'price' => 7500,
-        'image' => 'img/lot-5.jpg'
+        'message' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis fuga sunt dolore ratione molestias. Ea dolores odit incidunt fugiat iusto.',
+        'lot-rate' => 7500,
+        'lot-step' => 100,
+        'lot-date' > '20.10.2022',
+        'image-path' => 'img/lot-5.jpg'
     ],
     [
-        'name' => 'Маска Oakley Canopy',
+        'lot-name' => 'Маска Oakley Canopy',
         'category' => 'Разное',
-        'price' => 5400,
-        'image' => 'img/lot-6.jpg'
+        'message' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis fuga sunt dolore ratione molestias. Ea dolores odit incidunt fugiat iusto.',
+        'lot-rate' => 5400,
+        'lot-step' => 100,
+        'lot-date' > '20.10.2022',
+        'image-path' => 'img/lot-6.jpg'
     ],
 ];
