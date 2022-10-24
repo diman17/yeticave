@@ -7,6 +7,16 @@ $product = null;
 
 if (isset($_GET['index'])) {
     $product = $products[$_GET['index']];
+
+    if (isset($_COOKIE["products_hist"])) {
+        $products_hist = json_decode($_COOKIE["products_hist"]);
+        array_push($products_hist, $_GET['index']);
+        $products_hist = array_unique($products_hist);
+        setcookie("products_hist", json_encode($products_hist), strtotime("+ 30 days"), "/");
+    } else {
+        $products_hist = [$_GET['index']];
+        setcookie("products_hist", json_encode($products_hist), strtotime("+ 30 days"), "/");
+    }
 }
 
 if (!$product) {
